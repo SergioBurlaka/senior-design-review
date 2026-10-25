@@ -1,0 +1,38 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  probes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Syntax-check probe scripts
+        run: for f in skills/senior-design-review/scripts/*.js; do node --check "$f"; done
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install test dependencies
+        run: |
+          pip install playwright pytest pyyaml
+          python -m playwright install --with-deps chromium
+      - name: Compile capture.py
+        run: python -m py_compile skills/senior-design-review/scripts/capture.py
+      - name: Probe regression tests
+        run: pytest -q tests
+
+  manifest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Validate plugin and marketplace
+        run: npx -y @anthropic-ai/claude-code plugin validate --strict .
