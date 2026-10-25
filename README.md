@@ -108,7 +108,6 @@ Tips:
 .claude-plugin/
   plugin.json            plugin manifest
   marketplace.json       makes this repo installable as a marketplace
-  icon.png
 skills/senior-design-review/
   SKILL.md               the review flow
   references/            visual craft, responsive & browser tiers, states & motion,
