@@ -142,6 +142,10 @@ test for any new probe check.
 - Severity from a single reviewer is an estimate. Treat the report as a strong second opinion,
   not a verdict from your design team.
 
+## Privacy
+
+The plugin has no server and sends no data to its author or any third party. It reads the pages you ask it to review; see [PRIVACY.md](PRIVACY.md).
+
 ## Licence
 
 [MIT](LICENSE). Bundles probe scripts from **ux-ui-audit** by UXBYISSA under MIT — see [NOTICE.md](NOTICE.md).
