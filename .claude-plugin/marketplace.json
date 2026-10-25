@@ -1,0 +1,15 @@
+{
+  "name": "sergioburlaka",
+  "description": "Plugins by Sergii Burlaka",
+  "owner": {
+    "name": "Sergii Burlaka",
+    "url": "https://github.com/SergioBurlaka"
+  },
+  "plugins": [
+    {
+      "name": "senior-design-review",
+      "source": "./",
+      "description": "Senior product-designer review of a live web app on desktop and mobile: measured design metrics plus opinionated critique."
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "senior-design-review",
+  "displayName": "Senior Design Review",
+  "version": "1.0.0",
+  "description": "Reviews a live web app the way a senior product designer would, on desktop and on mobile with real device emulation: measured design metrics plus an opinionated critique of hierarchy, typography, spacing, colour, states, responsive layout and identity.",
+  "author": {
+    "name": "Sergii Burlaka",
+    "url": "https://github.com/SergioBurlaka"
+  },
+  "homepage": "https://github.com/SergioBurlaka/senior-design-review",
+  "repository": "https://github.com/SergioBurlaka/senior-design-review",
+  "license": "MIT",
+  "keywords": [
+    "design-review",
+    "design-critique",
+    "ui",
+    "ux",
+    "responsive",
+    "mobile",
+    "visual-design",
+    "frontend"
+  ],
+  "skills": "./skills"
+}
