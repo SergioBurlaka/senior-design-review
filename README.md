@@ -1,7 +1,3 @@
-<p align="center">
-  <img src=".claude-plugin/icon.png" width="112" alt="Senior Design Review icon">
-</p>
-
 <h1 align="center">Senior Design Review</h1>
 
 <p align="center">
